@@ -1,0 +1,209 @@
+/*------VARIABLES------*/
+/*---fonts---*/
+body {
+  background-color: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+._wrapper {
+  background-color: white;
+  max-width: 1260px;
+  min-height: 100%;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+a:link,
+a:active,
+a:visited,
+a:focus {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6A983C;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header__company-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  min-height: 130px;
+  /*border: 1px solid forestgreen;*/
+}
+.header__search-logo {
+  margin-right: 158px;
+}
+.header__user-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-contacts__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-contacts__info-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.company-contacts__info-item {
+  margin-left: 33px;
+}
+.company-contacts__info-item:nth-child(1) {
+  margin-left: 0;
+}
+.company-contacts__info-item_link:link,
+.company-contacts__info-item_link:active,
+.company-contacts__info-item_link:visited,
+.company-contacts__info-item_link:focus {
+  font-size: 12px;
+}
+.search-field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  min-width: 500px;
+  min-height: 42px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  /*border: 1px solid forestgreen;*/
+}
+.search-field__category-set {
+  position: relative;
+  min-width: calc(106px + 48px);
+  border-right: 1px solid #D1D1D1;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.search-field__category-set::after {
+  content: "";
+  position: absolute;
+  left: calc(8px + 106px);
+  width: 16px;
+  height: 16px;
+  background: url("/img/icons/open-list.svg") no-repeat 50% 80%;
+}
+.search-field__category-set:hover .category-set {
+  display: flex;
+  flex-direction: column;
+}
+.search-field__search {
+  min-width: calc(262px + 15px + 12px);
+}
+.category-set {
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+.category-set__item {
+  box-sizing: border-box;
+  border: 1px solid #D1D1D1;
+  background: #F9F9F9;
+}
+.category-set__item:hover {
+  background-color: #e0e0e0;
+}
+.search {
+  margin-left: 24px;
+}
+.search__search-form {
+  position: relative;
+}
+.search__input {
+  background: none;
+  border: none;
+}
+.search__input:focus ~ label {
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.search__label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.search__label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 16px;
+  height: 16px;
+  background: url("/img/icons/search-lense.svg") no-repeat 50% 50%;
+}
+.user-field {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 88px;
+}
+.shopping-cart {
+  position: relative;
+}
+.shopping-cart__counter {
+  position: absolute;
+  bottom: -6px;
+  left: -6px;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  background: #E6704B;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.main {
+  flex: 1 1 auto;
+}
+/*# sourceMappingURL=main.css.map */
