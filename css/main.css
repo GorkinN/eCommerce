@@ -1,5 +1,6 @@
 /*------VARIABLES------*/
 /*---fonts---*/
+/*---containers---*/
 body {
   background-color: #E5E5E5;
   font-family: 'Poppins', sans-serif;
@@ -9,13 +10,20 @@ body {
   line-height: 22px;
   color: #151515;
 }
+.caption_h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(15px + 3px);
+  line-height: calc(22px + 5px);
+  color: #151515;
+}
 ._wrapper {
   background-color: white;
-  max-width: 1260px;
+  max-width: calc(1260/1170 * 1170px);
   min-height: 100%;
   box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -31,9 +39,9 @@ a:focus {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #6A983C;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
   text-decoration: none;
 }
 .header {
@@ -42,6 +50,7 @@ a:focus {
   width: 100%;
 }
 .header__company-contacts {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,6 +59,7 @@ a:focus {
   border-bottom: 1px solid #D1D1D1;
 }
 .header__search {
+  width: 100%;
   display: flex;
   align-items: center;
   min-height: 130px;
@@ -61,6 +71,185 @@ a:focus {
 .header__user-field {
   display: flex;
   flex-wrap: wrap;
+}
+.header__categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 0 45px;
+  margin: 0 auto;
+  min-height: 55px;
+  background-color: #F9F9F9;
+}
+.header__location {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 15.5px 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15px - 3px);
+  line-height: 16px;
+  color: #A9A9A9;
+}
+.header__location_previous-location {
+  margin-right: 21px;
+  position: relative;
+}
+.header__location_previous-location:after {
+  position: absolute;
+  content: "/";
+  top: 0;
+  right: -13px;
+  width: 5px;
+  color: #D1D1D1;
+}
+.header__location_current-location {
+  color: #151515;
+}
+.categories-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.categories-menu__item {
+  position: relative;
+  margin-right: 54px;
+  /*border:1px solid black;*/
+  height: 100%;
+}
+.categories-menu__item:nth-last-child(1) {
+  margin-right: 0;
+}
+.categories-menu__item:after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: calc(0.25*22px);
+  width: 12px;
+  height: 12px;
+  background: url("/img/icons/open-list-small.svg") no-repeat 50% 50%;
+}
+.sub-menu__bakery,
+.sub-menu__fruit-and-vegetables,
+.sub-menu__meat-and-fish,
+.sub-menu__drinks,
+.sub-menu__kitchen,
+.sub-menu__special-nutrition,
+.sub-menu__baby,
+.sub-menu__pharmacy {
+  position: relative;
+}
+.sub-menu__bakery:hover .sub-menu__list_bakery,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_bakery,
+.sub-menu__meat-and-fish:hover .sub-menu__list_bakery,
+.sub-menu__drinks:hover .sub-menu__list_bakery,
+.sub-menu__kitchen:hover .sub-menu__list_bakery,
+.sub-menu__special-nutrition:hover .sub-menu__list_bakery,
+.sub-menu__baby:hover .sub-menu__list_bakery,
+.sub-menu__pharmacy:hover .sub-menu__list_bakery,
+.sub-menu__bakery:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__meat-and-fish:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__drinks:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__kitchen:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__special-nutrition:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__baby:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__pharmacy:hover .sub-menu__list_fruit-and-vegetables,
+.sub-menu__bakery:hover .sub-menu__list_meat-and-fish,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_meat-and-fish,
+.sub-menu__meat-and-fish:hover .sub-menu__list_meat-and-fish,
+.sub-menu__drinks:hover .sub-menu__list_meat-and-fish,
+.sub-menu__kitchen:hover .sub-menu__list_meat-and-fish,
+.sub-menu__special-nutrition:hover .sub-menu__list_meat-and-fish,
+.sub-menu__baby:hover .sub-menu__list_meat-and-fish,
+.sub-menu__pharmacy:hover .sub-menu__list_meat-and-fish,
+.sub-menu__bakery:hover .sub-menu__list_drinks,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_drinks,
+.sub-menu__meat-and-fish:hover .sub-menu__list_drinks,
+.sub-menu__drinks:hover .sub-menu__list_drinks,
+.sub-menu__kitchen:hover .sub-menu__list_drinks,
+.sub-menu__special-nutrition:hover .sub-menu__list_drinks,
+.sub-menu__baby:hover .sub-menu__list_drinks,
+.sub-menu__pharmacy:hover .sub-menu__list_drinks,
+.sub-menu__bakery:hover .sub-menu__list_kitchen,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_kitchen,
+.sub-menu__meat-and-fish:hover .sub-menu__list_kitchen,
+.sub-menu__drinks:hover .sub-menu__list_kitchen,
+.sub-menu__kitchen:hover .sub-menu__list_kitchen,
+.sub-menu__special-nutrition:hover .sub-menu__list_kitchen,
+.sub-menu__baby:hover .sub-menu__list_kitchen,
+.sub-menu__pharmacy:hover .sub-menu__list_kitchen,
+.sub-menu__bakery:hover .sub-menu__list_special-nutrition,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_special-nutrition,
+.sub-menu__meat-and-fish:hover .sub-menu__list_special-nutrition,
+.sub-menu__drinks:hover .sub-menu__list_special-nutrition,
+.sub-menu__kitchen:hover .sub-menu__list_special-nutrition,
+.sub-menu__special-nutrition:hover .sub-menu__list_special-nutrition,
+.sub-menu__baby:hover .sub-menu__list_special-nutrition,
+.sub-menu__pharmacy:hover .sub-menu__list_special-nutrition,
+.sub-menu__bakery:hover .sub-menu__list_baby,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_baby,
+.sub-menu__meat-and-fish:hover .sub-menu__list_baby,
+.sub-menu__drinks:hover .sub-menu__list_baby,
+.sub-menu__kitchen:hover .sub-menu__list_baby,
+.sub-menu__special-nutrition:hover .sub-menu__list_baby,
+.sub-menu__baby:hover .sub-menu__list_baby,
+.sub-menu__pharmacy:hover .sub-menu__list_baby,
+.sub-menu__bakery:hover .sub-menu__list_pharmacy,
+.sub-menu__fruit-and-vegetables:hover .sub-menu__list_pharmacy,
+.sub-menu__meat-and-fish:hover .sub-menu__list_pharmacy,
+.sub-menu__drinks:hover .sub-menu__list_pharmacy,
+.sub-menu__kitchen:hover .sub-menu__list_pharmacy,
+.sub-menu__special-nutrition:hover .sub-menu__list_pharmacy,
+.sub-menu__baby:hover .sub-menu__list_pharmacy,
+.sub-menu__pharmacy:hover .sub-menu__list_pharmacy {
+  display: block;
+}
+.sub-menu__list_bakery,
+.sub-menu__list_fruit-and-vegetables,
+.sub-menu__list_meat-and-fish,
+.sub-menu__list_drinks,
+.sub-menu__list_kitchen,
+.sub-menu__list_special-nutrition,
+.sub-menu__list_baby,
+.sub-menu__list_pharmacy {
+  position: absolute;
+  display: none;
+  top: 22px;
+  left: 0;
+  z-index: 49;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+.sub-menu__item {
+  padding: 5px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.sub-menu__item:nth-last-child(1) {
+  border-bottom: none;
+}
+.sub-menu__item input[type="radio"] {
+  display: none;
+}
+.sub-menu__item input[type="radio"]:checked + label {
+  color: #6A983C;
+}
+.sub-menu__item:hover {
+  background: #c6c6c6;
+  color: #6A983C;
 }
 .company-contacts__info {
   display: flex;
@@ -76,16 +265,29 @@ a:focus {
   line-height: 16px;
 }
 .company-contacts__info-item {
-  margin-left: 33px;
+  margin-right: 33px;
+  padding: 5px 0;
 }
-.company-contacts__info-item:nth-child(1) {
-  margin-left: 0;
+.company-contacts__info-item:nth-last-child(1) {
+  margin-right: 0;
 }
 .company-contacts__info-item_link:link,
 .company-contacts__info-item_link:active,
 .company-contacts__info-item_link:visited,
 .company-contacts__info-item_link:focus {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
+  line-height: 16px;
+  color: #6A983C;
+}
+.company-contacts__info-item_long-margin {
+  margin-right: 38px;
+  padding: 5px 0;
+}
+.company-contacts__info-item_long-margin:nth-last-child(1) {
+  margin-right: 0;
 }
 .search-field {
   display: flex;
@@ -103,7 +305,7 @@ a:focus {
 .search-field__category-set {
   position: relative;
   min-width: calc(106px + 48px);
-  border-right: 1px solid #D1D1D1;
+  padding: 10px 0;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -123,22 +325,51 @@ a:focus {
   display: flex;
   flex-direction: column;
 }
+.search-field__category-set:before {
+  position: absolute;
+  content: "";
+  left: 155px;
+  top: 11px;
+  box-sizing: border-box;
+  height: 20px;
+  border-right: 1px solid #D1D1D1;
+}
+.search-field__category-set_chosen {
+  /*border-right:1px solid #D1D1D1;*/
+}
 .search-field__search {
   min-width: calc(262px + 15px + 12px);
 }
 .category-set {
   display: none;
   position: absolute;
-  top: 22px;
+  top: 42px;
   left: 0;
+  z-index: 50;
 }
 .category-set__item {
-  box-sizing: border-box;
-  border: 1px solid #D1D1D1;
+  padding: 10px;
   background: #F9F9F9;
+  border-bottom: 1px solid #D1D1D1;
+  border-left: 1px solid #D1D1D1;
+  border-right: 1px solid #D1D1D1;
+}
+.category-set__item input[type="radio"] {
+  display: none;
+}
+.category-set__item input[type="radio"]:checked + .category-set__item_checked {
+  color: #6A983C;
+  transition: 0.2s ease;
 }
 .category-set__item:hover {
   background-color: #e0e0e0;
+}
+.category-set__item:nth-last-child(1) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.category-set__item:nth-child(1) {
+  border-top: 1px solid #D1D1D1;
 }
 .search {
   margin-left: 24px;
@@ -162,8 +393,8 @@ a:focus {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 15px -1px;
+  line-height: 22px -3px;
   color: #A9A9A9;
 }
 .search__label::after {
@@ -199,11 +430,72 @@ a:focus {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 22px -4px;
   color: #FFFFFF;
 }
 .main {
   flex: 1 1 auto;
+  height: 10px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 64px 0;
+  width: 100%;
+  min-height: 556px;
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__links-caption {
+  margin-bottom: 16px;
+}
+.footer__links-list-item {
+  margin-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px -1px;
+  line-height: 19px;
+  color: #6A983C;
+}
+.footer__product-tags-caption {
+  margin-bottom: 16px;
+}
+.footer__copyright {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px -1px;
+  line-height: 19px;
+  color: #151515;
+}
+.product-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.product-tags-list__item {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #F5F5F5;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+.product-tags-list__item:nth-last-child(1) {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */

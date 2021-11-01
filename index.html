@@ -19,9 +19,9 @@
 <body>
 <div class="_wrapper">
 
-    <header class="header _container">
+    <header class="header">
 
-        <div class="header__company-contacts company-contacts">
+        <div class="header__company-contacts company-contacts _container">
             <div class="company-contacts__info">
                 <ul class="company-contacts__info-list">
                     <li class="company-contacts__info-item"><a class="company-contacts__info-item_link" href="#">Chat with us</a></li>
@@ -31,34 +31,60 @@
             </div>
             <div class="company-contacts__PR-links company-contacts">
                 <ul class="company-contacts__info-list">
-                    <li class="company-contacts__info-item"><a class="company-contacts__info-item_link" href="#">Blog</a></li>
-                    <li class="company-contacts__info-item"><a class="company-contacts__info-item_link" href="#">About Us</a></li>
-                    <li class="company-contacts__info-item"><a class="company-contacts__info-item_link" href="#">Careers</a></li>
+                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">Blog</a></li>
+                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">About Us</a></li>
+                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">Careers</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="header__search">
+        <div class="header__search _container">
             <div class="header__search-logo logo">
                 <img src="img/LogoFreshnesecom.png" height="18" width="177" alt=""/></div>
             <div class="header__search-field search-field">
                 <div class="search-field__category-set">
-                    <span>All categories</span>
-                    <ul class="category-set">
-                        <li class="category-set__item">Bakery</li>
-                        <li class="category-set__item">Fruit and vegetables</li>
-                        <li class="category-set__item">Meat and fish</li>
-                        <li class="category-set__item">Drinks</li>
-                        <li class="category-set__item">Kitchen</li>
-                        <li class="category-set__item">Special nutrition</li>
-                        <li class="category-set__item">Baby</li>
-                        <li class="category-set__item">Pharmacy</li>
-                    </ul>
+                    <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
+                    <span class="search-field__category-set_chosen">All categories</span>
+                    <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
+                    <form class="category-set" name="category-set" action="#" method="post">
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item" checked>
+                            <span class="category-set__item_checked">All categories</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Bakery</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Fruit and vegetables</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Meat and fish</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Drinks</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Special nutrition</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Baby</span>
+                        </label>
+                        <label  class="category-set__item">
+                            <input type="radio" name="category-set__item">
+                            <span class="category-set__item_checked">Pharmacy</span>
+                        </label>
+                    </form>
                 </div>
                 <div class="search-field__search search">
                     <form class="search__search-form" action="" method="get">
                         <input  class="search__input"
-                                type="text"
+                                type="search"
                                 name="product-search-field"
                                 id="product-search-field">
                         <label class="search__label" for="product-search-field">
@@ -83,26 +109,221 @@
 
         <div class="header__categories">
             <ul class="header__categories-menu categories-menu">
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
-                <li class="categories-menu__item"></li>
+                <li class="categories-menu__item sub-menu__bakery">
+                    Bakery
+                    <ul class="sub-menu__list_bakery">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="bakery" value="bakery1" id="bakery1">
+                            <label for="bakery1">Bakery1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="bakery" value="bakery2" id="bakery2">
+                            <label for="bakery2">Bakery2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="bakery" value="bakery3" id="bakery3">
+                            <label for="bakery3">Bakery3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__fruit-and-vegetables">
+                    Fruit and vegetables
+                    <ul class="sub-menu__list_fruit-and-vegetables">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables1" id="fruit-and-vegetables1">
+                            <label for="fruit-and-vegetables1">Fruit and vegetables1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables2" id="fruit-and-vegetables2">
+                            <label for="fruit-and-vegetables2">Fruit and vegetables2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables3" id="fruit-and-vegetables3">
+                            <label for="fruit-and-vegetables3">Fruit and vegetables3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__meat-and-fish">
+                    Meat and fish
+                    <ul class="sub-menu__list_meat-and-fish">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="meat-and-fish" value="meat-and-fish1" id="meat-and-fish1">
+                            <label for="meat-and-fish1">Meat and fish1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="meat-and-fish" value="meat-and-fish2" id="meat-and-fish2">
+                            <label for="meat-and-fish2">Meat and fish2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="meat-and-fish" value="meat-and-fish3" id="meat-and-fish3">
+                            <label for="meat-and-fish3">Meat and fish3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__drinks">
+                    Drinks
+                    <ul class="sub-menu__list_drinks">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="drinks" value="drinks1" id="drinks1">
+                            <label for="drinks1">Drinks1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="drinks" value="drinks2" id="drinks2">
+                            <label for="drinks2">Drinks2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="drinks" value="drinks3" id="drinks3">
+                            <label for="drinks3">Drinks3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__kitchen">
+                    Kitchen
+                    <ul class="sub-menu__list_kitchen">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="kitchen" value="kitchen1" id="kitchen1">
+                            <label for="kitchen1">Kitchen1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="kitchen" value="kitchen2" id="kitchen2">
+                            <label for="kitchen2">Kitchen2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="kitchen" value="kitchen3" id="kitchen3">
+                            <label for="kitchen3">Kitchen3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__special-nutrition">
+                    Special nutrition
+                    <ul class="sub-menu__list_special-nutrition">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="special-nutrition" value="special-nutrition1" id="special-nutrition1">
+                            <label for="special-nutrition1">Special nutrition1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="special-nutrition" value="special-nutrition2" id="special-nutrition2">
+                            <label for="special-nutrition2">Special nutrition2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="special-nutrition" value="special-nutrition3" id="special-nutrition3">
+                            <label for="special-nutrition3">Special nutrition3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__baby">
+                    Baby
+                    <ul class="sub-menu__list_baby">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="baby" value="baby1" id="baby1">
+                            <label for="baby1">Baby1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="baby" value="baby2" id="baby2">
+                            <label for="baby2">Baby2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="baby" value="baby3" id="baby3">
+                            <label for="baby3">Baby3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories-menu__item sub-menu__pharmacy">
+                    Pharmacy
+                    <ul class="sub-menu__list_pharmacy">
+                        <li class="sub-menu__item">
+                            <input type="radio" name="pharmacy" value="pharmacy1" id="pharmacy1">
+                            <label for="pharmacy1">Pharmacy1</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="pharmacy" value="pharmacy2" id="pharmacy2">
+                            <label for="pharmacy2">Pharmacy2</label>
+                        </li>
+                        <li class="sub-menu__item">
+                            <input type="radio" name="pharmacy" value="pharmacy3" id="pharmacy3">
+                            <label for="pharmacy3">Pharmacy3</label>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
-        <div class="header__current-location">
-
+        <div class="header__location _container">
+            <div class="header__location_previous-location"><a href="#">Homepage</a></div>
+            <div class="header__location_current-location"><a href="#">Fruit and vegetables</a></div>
         </div>
 
     </header>
 
     <main class="main"></main>
 
-    <footer class="footer"></footer>
+    <footer class="footer _container">
+        <div class="footer__links">
+            <div class="footer__get-in-touch">
+                <h2 class="footer__links-caption caption_h2">Get in touch</h2>
+                <ul class="footer__links-list">
+                    <li class="footer__links-list-item"><a href="#">About Us</a></li>
+                    <li class="footer__links-list-item"><a href="#">Careers</a></li>
+                    <li class="footer__links-list-item"><a href="#">Press Releases</a></li>
+                    <li class="footer__links-list-item"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__connections">
+                <h2 class="footer__links-caption caption_h2">Connections</h2>
+                <ul class="footer__links-list">
+                    <li class="footer__links-list-item"><a href="#">Facebook</a></li>
+                    <li class="footer__links-list-item"><a href="#">Twitter</a></li>
+                    <li class="footer__links-list-item"><a href="#">Instagram</a></li>
+                    <li class="footer__links-list-item"><a href="#">Youtube</a></li>
+                    <li class="footer__links-list-item"><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer__earnings">
+                <h2 class="footer__links-caption caption_h2">Earnings</h2>
+                <ul class="footer__links-list">
+                    <li class="footer__links-list-item"><a href="#">Become an Affiliate</a></li>
+                    <li class="footer__links-list-item"><a href="#">Advertise your product</a></li>
+                    <li class="footer__links-list-item"><a href="#">Sell on Market</a></li>
+                </ul>
+            </div>
+            <div class="footer__account">
+                <h2 class="footer__links-caption caption_h2">Account</h2>
+                <ul class="footer__links-list">
+                    <li class="footer__links-list-item"><a href="#">Your account</a></li>
+                    <li class="footer__links-list-item"><a href="#">Returns Centre</a></li>
+                    <li class="footer__links-list-item"><a href="#">100 % purchase protection</a></li>
+                    <li class="footer__links-list-item"><a href="#">Chat with us</a></li>
+                    <li class="footer__links-list-item"><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__product-tags">
+            <h2 class="footer__product-tags-caption caption_h2">Product tags</h2>
+            <ul class="footer__product-tags-list product-tags-list">
+                <li class="product-tags-list__item">Beans</li>
+                <li class="product-tags-list__item">Carrots</li>
+                <li class="product-tags-list__item">Apples</li>
+                <li class="product-tags-list__item">Garlic</li>
+                <li class="product-tags-list__item">Mushrooms</li>
+                <li class="product-tags-list__item">Tomatoes</li>
+                <li class="product-tags-list__item">Chilli peppers</li>
+                <li class="product-tags-list__item">Broccoli</li>
+                <li class="product-tags-list__item">Watermelons</li>
+                <li class="product-tags-list__item">Oranges</li>
+                <li class="product-tags-list__item">Bananas</li>
+                <li class="product-tags-list__item">Grapes</li>
+                <li class="product-tags-list__item">Cherries</li>
+                <li class="product-tags-list__item">Meat</li>
+                <li class="product-tags-list__item">Seo tag</li>
+                <li class="product-tags-list__item">Fish</li>
+                <li class="product-tags-list__item">Seo tag</li>
+                <li class="product-tags-list__item">Fresh food</li>
+                <li class="product-tags-list__item">Lemons</li>
+            </ul>
+
+        </div>
+        <div class="footer__copyright">Copyright © 2020 petrbilek.com</div>
+    </footer>
 </div>
 
 </body>
