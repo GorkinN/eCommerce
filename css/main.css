@@ -2,6 +2,9 @@
 /*------VARIABLES------*/
 /*---fonts---*/
 /*---containers---*/
+html {
+  font-size: 15px;
+}
 body {
   background-color: #E5E5E5;
   font-family: 'Poppins', sans-serif;
@@ -869,6 +872,89 @@ a:focus {
 }
 @media (max-width: 992px) {
   .farmers-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/*customers-reviews-----------------------------------------------------------------------------------*/
+.customers-reviews {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.customers-reviews__title-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+.customers-reviews__content-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1572px;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-10%);
+}
+.customers-reviews__switcher {
+  position: absolute;
+  width: 88px;
+  height: 227px;
+  top: -2px;
+  background: none;
+  border: none;
+}
+.customers-reviews__switcher_left {
+  left: 9.5%;
+  box-shadow: inset 0 0 0 88px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 70px 0 15px 0px rgba(255, 0, 255, 0.7);
+}
+.customers-reviews__switcher_right {
+  right: 9.5%;
+}
+.customers-reviews__content-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 32px 39px;
+  /*24px;*/
+  border: 1px solid #F1F1F1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  max-width: 369px;
+}
+.customers-reviews__content-card-text {
+  max-width: 305px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.customers-reviews__content-card-username {
+  text-align: center;
+  font-size: 12px;
+  color: #A9A9A9;
+}
+.customers-reviews__content-card-avatar {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: -24px;
+  left: calc(50% - 24px);
+  width: 48px;
+}
+.customers-reviews__content-card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1200px) {
+  .customers-reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .customers-reviews {
     padding-top: 20px;
     padding-bottom: 20px;
   }

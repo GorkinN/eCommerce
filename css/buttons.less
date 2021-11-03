@@ -62,7 +62,26 @@
   font-size: 15px;
   line-height: 22px;
   color: #FFFFFF;
-  /*max-width: 90px;
-  max-height: 36px;*/
+}
+.btn-transparent {
+  position: relative;
+  padding: 6px 34px 6px 12px;
+  border:none;
+  background: none;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  &:after {
+    position: absolute;
+    content: "";
+    top:calc(9.5 / 35 * 100%);
+    right:calc(12 / 98 * 100%);
+    width:16px;
+    height:16px;
+    background: url("/img/buttons/arrow-green.svg") no-repeat;
+  }
 }
 
