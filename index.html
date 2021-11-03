@@ -9,8 +9,9 @@
     <title>Enjoy fresh food</title>
 
     <!---Подключаем стили--->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/buttons.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!---Подключаем шрифты--->
     <link rel="stylesheet" href="css/fonts/open-sans-v26-latin/font_open-sans.css">
     <link rel="stylesheet" href="css/fonts/poppins-v15-latin/font-poppins.css">
@@ -18,6 +19,7 @@
 
 <body>
 <div class="_wrapper">
+
 
     <header class="header">
 
@@ -37,7 +39,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="header__search _container">
             <div class="header__search-logo logo">
                 <img src="img/LogoFreshnesecom.png" height="18" width="177" alt=""/></div>
@@ -93,7 +94,6 @@
                     </form>
                 </div>
             </div>
-
             <div class="header__user-field user-field">
                 <div class="user-field__account">
                     <a href="#"><img src="/img/icons/user-account.svg" alt="login"></a>
@@ -106,7 +106,6 @@
                 </div>
             </div>
         </div>
-
         <div class="header__categories">
             <ul class="header__categories-menu categories-menu">
                 <li class="categories-menu__item sub-menu__bakery">
@@ -247,17 +246,225 @@
                 </li>
             </ul>
         </div>
-
+        <!--- hiding location on the first page
         <div class="header__location _container">
             <div class="header__location_previous-location"><a href="#">Homepage</a></div>
             <div class="header__location_current-location"><a href="#">Fruit and vegetables</a></div>
         </div>
+        --->
 
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+        <!---********* banner-section START*********--->
+        <section class="banner-section _container">
+            <div class="banner-section__box">
+                <!---Menu start--->
+                <div class="banner-section__menu section__menu">
+                    <h2 class="section__menu-caption caption_h2">Category menu</h2>
+                    <ul class="section__menu-list">
+                        <li class="section__menu-list-item"><a href="#">Bakery</a></li>
+                        <li class="section__menu-list-item"><a href="#">Fruit and vegetables</a></li>
+                        <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
+                        <li class="section__menu-list-item"><a href="#">Drinks</a></li>
+                        <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
+                    </ul>
+                    <button class="section__menu-button btn btn-label">More categories</button>
+                </div>
+                <!---Menu end--->
+                <!---Banner start--->
+                <div class="banner-section__banner">
+                    <div class="banner-section__banner-subfocus">Banner subfocus</div>
+                    <div class="banner-section__banner-heading">Space for heading</div>
+                    <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
+                </div>
+                <!---Banner end--->
+                <!---Banner start--->
+                <div class="banner-section__banner">
+                    <div class="banner-section__banner-subfocus">Banner subfocus</div>
+                    <div class="banner-section__banner-heading">Space for heading</div>
+                    <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
+                </div>
+                <!---Banner end--->
+
+            </div>
+        </section>
+        <!---********* banner-section END*********--->
+        <!---********* best-selling-section START*********--->
+        <section class="best-selling-section _container">
+            <div class="section__box">
+                <!---Menu start--->
+                <div class="best-selling-section__menu section__menu">
+                    <h2 class="section__menu-caption caption_h2">Best selling products</h2>
+                    <ul class="section__menu-list">
+                        <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
+                        <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
+                        <li class="section__menu-list-item"><a href="#">Special nutrition</a></li>
+                        <li class="section__menu-list-item"><a href="#">Pharmacy</a></li>
+                        <li class="section__menu-list-item"><a href="#">Baby</a></li>
+                    </ul>
+                    <button class="section__menu-button btn btn-label">More products</button>
+                </div>
+                <!---Menu end--->
+                <!---Card start--->
+                <div class="best-selling-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+                <!---Card start--->
+                <div class="best-selling-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+                <!---Card start--->
+                <div class="best-selling-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+            </div>
+        </section>
+        <!---********* best-selling-section END*********--->
+
+        <!---********* farmers-section START*********--->
+        <section class="farmers-section _container">
+            <div class="section__box">
+                <!---Menu start--->
+                <div class="farmers-section__menu section__menu">
+                    <h2 class="section__menu-caption caption_h2">Best from Farmers</h2>
+                    <ul class="section__menu-list">
+                        <li class="section__menu-list-item"><a href="#">Carrots</a></li>
+                        <li class="section__menu-list-item"><a href="#">Tomatoes</a></li>
+                        <li class="section__menu-list-item"><a href="#">Potatoes</a></li>
+                        <li class="section__menu-list-item"><a href="#">Chicken</a></li>
+                        <li class="section__menu-list-item"><a href="#">Pork</a></li>
+                    </ul>
+                    <button class="section__menu-button btn btn-label">More products</button>
+                </div>
+                <!---Menu end--->
+                <!---Card start--->
+                <div class="farmers-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+                <!---Card start--->
+                <div class="farmers-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+                <!---Card start--->
+                <div class="farmers-section__content section__content">
+                    <div class="section__content-card">
+                        <div class="section__content-card-picture">
+                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
+                        <div class="section__content-card-sale">- 36 %</div>
+                        <div class="section__content-card-title">Product Title</div>
+                        <div class="section__content-card-description">Space for a small product description</div>
+                        <div class="section__content-card-price-box">
+                            <div class="section__content-card-price">
+                                <span>0.28 USD</span><br>
+                                <span class="section__content-card-priceoff">48.56</span>
+                            </div>
+                            <div class="section__content-card-button">
+                                <button class="btn-buy-now">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Card end--->
+            </div>
+        </section>
+        <!---********* farmers-section END*********--->
+
+        <!---********* customers-reviews START*********--->
+        <section class="customers-reviews"></section>
+        <!---********* customers-reviews END*********--->
+
+        <!---********* headline-section START*********--->
+        <section class="headline-section _container"></section>
+        <!---********* headline-section END*********--->
+
+        <!---********* blog-section START*********--->
+        <section class="blog-section _container"></section>
+        <!---********* blog-section END*********--->
+    </main>
 
     <footer class="footer _container">
+
         <div class="footer__links">
             <div class="footer__get-in-touch">
                 <h2 class="footer__links-caption caption_h2">Get in touch</h2>
@@ -323,7 +530,9 @@
 
         </div>
         <div class="footer__copyright">Copyright © 2020 petrbilek.com</div>
+
     </footer>
+
 </div>
 
 </body>
