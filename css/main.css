@@ -751,6 +751,11 @@ a:focus {
     padding-bottom: 7px;
   }
 }
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /*banner-section-----------------------------------------------------------------------------------*/
 .banner-section {
   padding-top: 64px;
@@ -882,9 +887,6 @@ a:focus {
   padding-bottom: 64px;
 }
 .customers-reviews__title-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 39px;
 }
 .customers-reviews__card-box {
@@ -962,6 +964,26 @@ a:focus {
 }
 @media (max-width: 992px) {
   .customers-reviews {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/*headline-section-----------------------------------------------------------------------------------*/
+.headline-section {
+  padding-top: 93px;
+  padding-bottom: 64px;
+}
+.headline-section__title-box {
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .headline-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .headline-section {
     padding-top: 20px;
     padding-bottom: 20px;
   }
