@@ -196,7 +196,7 @@ a:focus {
         top:25%;
         width: 12px;
         height: 12px;
-        background: url("/img/icons/open-list-small.svg") no-repeat 50% 50%;
+        background: url("../img/icons/open-list-small.svg") no-repeat 50% 50%;
       }
     }
   }
@@ -330,7 +330,7 @@ a:focus {
       left:calc(8px + 106px);
       width:16px;
       height: 16px;
-      background: url("/img/icons/open-list.svg") no-repeat 50% 80%;
+      background: url("../img/icons/open-list.svg") no-repeat 50% 80%;
     }
     &:hover .category-set {
       display:flex;
@@ -445,7 +445,7 @@ a:focus {
       top:5%;
       width:16px;
       height:16px;
-      background: url("/img/icons/search-lense.svg") no-repeat 50% 50%;
+      background: url("../img/icons/search-lense.svg") no-repeat 50% 50%;
     }
   }
 }
@@ -743,7 +743,7 @@ a:focus {
     box-sizing: border-box;
     padding:48px 33px 32px 33px;
     border-radius: 12px;
-    background: #F4F8EC url("/img/banner-background.png") no-repeat;
+    background: #F4F8EC url("../img/banner-background.png") no-repeat;
     background-size: cover;
     &-subfocus {
       margin-bottom: 8px;
@@ -865,34 +865,38 @@ a:focus {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom:39px;
+
   }
-  &__content-box {
-    position:relative;
+  &__card-box {
     display: flex;
     justify-content: space-between;
     width: 1572px;
+    transform: translateX(-10%);
+    /*border:1px solid black;*/
+  }
+  &__content-box {
+    position:relative;
     margin:0;
     padding:0;
-    transform: translateX(-10%);
+    z-index:200;
+    /*box-shadow: inset 88px 0 60px -88px purple,
+                inset -88px 0 60px -88px purple;*/
   }
   &__switcher {
     position: absolute;
     width: 88px;
-    height:227px;
-    top:-2px;
+    height:110%;
+    top:1%;
     background: none;
     border:none;
+    z-index:2;
+    box-shadow: inset 88px 0 110px -60px white;
     &_left {
-      left:9.5%;
-      box-shadow: inset 0 0 0 88px rgba(255,255,255, 0.7);
-      box-shadow: inset 70px 0 15px 0px rgba(255, 0,255, 0.7);
+      left:-26px;
     }
     &_right {
-      right:9.5%;
-      &:after {
-
-      }
-      &:before {}
+      transform:rotate(180deg);
+      right:-26px;
     }
   }
   &__content-card {
@@ -905,6 +909,7 @@ a:focus {
     box-sizing: border-box;
     border-radius: 12px;
     max-width:369px;
+
     &-text {
       max-width: 305px;
       text-align: center;

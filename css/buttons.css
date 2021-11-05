@@ -20,7 +20,7 @@
   right: 10%;
   width: 16px;
   height: 16px;
-  background: url("/img/buttons/arrow-black.svg") no-repeat;
+  background: url("../img/buttons/arrow-black.svg") no-repeat;
 }
 .btn-label-green {
   position: relative;
@@ -32,7 +32,7 @@
   right: 10%;
   width: 16px;
   height: 16px;
-  background: url("/img/buttons/arrow-green.svg") no-repeat;
+  background: url("../img/buttons/arrow-green.svg") no-repeat;
 }
 .btn-banner {
   box-sizing: border-box;
@@ -79,6 +79,7 @@
   right: calc(12 / 98 * 100%);
   width: 16px;
   height: 16px;
-  background: url("/img/buttons/arrow-green.svg") no-repeat;
+  /*16px*/
+  background: url("../img/buttons/arrow-green.svg") no-repeat;
 }
 /*# sourceMappingURL=buttons.css.map */
