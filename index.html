@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="healthy food, fresh vegetables, meat, bakery, fish, kitchen, nutrition, baby food, pharmacy, fruits, low prices, food delivery">
+    <meta name="keywords"
+        content="healthy food, fresh vegetables, meat, bakery, fish, kitchen, nutrition, baby food, pharmacy, fruits, low prices, food delivery">
     <meta name="description" content="Enjoy fresh food for low prices with our delivery">
 
     <title>Enjoy fresh food</title>
@@ -16,629 +18,657 @@
     <!---Подключаем шрифты--->
     <link rel="stylesheet" href="css/fonts/open-sans-v26-latin/font_open-sans.css">
     <link rel="stylesheet" href="css/fonts/poppins-v15-latin/font-poppins.css">
-    <script src="js/categoriesOpen.js"></script>
+
 </head>
 
 <body>
-<div class="_wrapper">
-    <header class="header">
-        <div class="header__company-contacts company-contacts _container">
-            <div class="company-contacts__info">
-                <ul class="company-contacts__info-list">
-                    <li class="company-contacts__info-item"><a class="company-contacts__info-item_link" href="#">Chat with us</a></li>
-                    <li class="company-contacts__info-item">+420 336 775 664</li>
-                    <li class="company-contacts__info-item">info@freshnesecom.com</li>
-                </ul>
-            </div>
-            <div class="company-contacts__PR-links company-contacts">
-                <ul class="company-contacts__info-list">
-                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">Blog</a></li>
-                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">About Us</a></li>
-                    <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link" href="#">Careers</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header__search _container">
-            <div class="header__search-logo logo">
-                <img src="img/LogoFreshnesecom.png" height="18" width="177" alt=""/></div>
-            <div class="header__search-field search-field">
-                <div class="search-field__category-set">
-                    <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
-                    <span class="search-field__category-set_chosen">All categories</span>
-                    <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
-                    <form class="category-set" name="category-set" action="#" method="post">
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item" checked>
-                            <span class="category-set__item_checked">All categories</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Bakery</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Fruit and vegetables</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Meat and fish</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Drinks</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Special nutrition</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Baby</span>
-                        </label>
-                        <label  class="category-set__item">
-                            <input type="radio" name="category-set__item">
-                            <span class="category-set__item_checked">Pharmacy</span>
-                        </label>
-                    </form>
+    <div class="_wrapper">
+        <header class="header">
+            <div class="header__company-contacts company-contacts _container">
+                <div class="company-contacts__info">
+                    <ul class="company-contacts__info-list">
+                        <li class="company-contacts__info-item"><a class="company-contacts__info-item_link"
+                                href="#">Chat with us</a></li>
+                        <li class="company-contacts__info-item">+420 336 775 664</li>
+                        <li class="company-contacts__info-item">info@freshnesecom.com</li>
+                    </ul>
                 </div>
-                <div class="search-field__search search">
-                    <form class="search__search-form" action="" method="get">
-                        <input  class="search__input"
-                                type="search"
-                                name="product-search-field"
-                                id="product-search-field">
-                        <label class="search__label" for="product-search-field">
-                            Search Products, categories...
-                        </label>
-                    </form>
+                <div class="company-contacts__PR-links company-contacts">
+                    <ul class="company-contacts__info-list">
+                        <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link"
+                                href="#">Blog</a></li>
+                        <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link"
+                                href="#">About Us</a></li>
+                        <li class="company-contacts__info-item_long-margin"><a class="company-contacts__info-item_link"
+                                href="#">Careers</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="header__user-field user-field">
-                <div class="user-field__account">
-                    <a href="#"><img src="img\icons\user-account.svg" alt="login"></a>
-                </div>
-                <div class="user-field__shopping-cart shopping-cart">
-                    <div class="shopping-cart__icon">
-                        <a href="#"><img src="img/icons/shopping-cart.png" alt="shopping cart"></a>
+            <div class="header__search _container">
+                <div class="header__search-logo logo">
+                    <img src="img/LogoFreshnesecom.png" height="18" width="177" alt="" /></div>
+                <div class="header__search-field search-field">
+                    <div class="search-field__category-set">
+                        <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
+                        <p class="search-field__category-set_chosen">
+                            <span>All categories</span>
+                        </p>
+                        <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
+                        <form class="category-set" name="category-set" action="#" method="post">
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item" checked>
+                                <span class="category-set__item_checked">All categories</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Bakery</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Fruit and vegetables</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Meat and fish</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Drinks</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Special nutrition</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Baby</span>
+                            </label>
+                            <label class="category-set__item">
+                                <input type="radio" name="category-set__item">
+                                <span class="category-set__item_checked">Pharmacy</span>
+                            </label>
+                        </form>
                     </div>
-                    <div class="shopping-cart__counter">4</div>
+                    <div class="search-field__search search">
+                        <form class="search__search-form" action="" method="get">
+                            <input class="search__input" type="search" name="product-search-field"
+                                id="product-search-field">
+                            <label class="search__label" for="product-search-field">
+                                Search Products, categories...
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="header__user-field user-field">
+                    <div class="user-field__account">
+                        <a href="#"><img src="img\icons\user-account.svg" alt="login"></a>
+                    </div>
+                    <div class="user-field__shopping-cart shopping-cart">
+                        <div class="shopping-cart__icon">
+                            <a href="#"><img src="img/icons/shopping-cart.png" alt="shopping cart"></a>
+                        </div>
+                        <div class="shopping-cart__counter">4</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header__categories">
-            <ul class="header__categories-menu categories-menu">
-                <li class="categories-menu__item sub-menu__bakery">
-                    Bakery
-                    <ul class="sub-menu__list_bakery">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="bakery" value="bakeimry1" id="bakery1">
-                            <label for="bakery1">Bakery1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="bakery" value="bakery2" id="bakery2">
-                            <label for="bakery2">Bakery2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="bakery" value="bakery3" id="bakery3">
-                            <label for="bakery3">Bakery3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__fruit-and-vegetables">
-                    Fruit and vegetables
-                    <ul class="sub-menu__list_fruit-and-vegetables">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables1" id="fruit-and-vegetables1">
-                            <label for="fruit-and-vegetables1">Fruit and vegetables1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables2" id="fruit-and-vegetables2">
-                            <label for="fruit-and-vegetables2">Fruit and vegetables2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables3" id="fruit-and-vegetables3">
-                            <label for="fruit-and-vegetables3">Fruit and vegetables3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__meat-and-fish">
-                    Meat and fish
-                    <ul class="sub-menu__list_meat-and-fish">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="meat-and-fish" value="meat-and-fish1" id="meat-and-fish1">
-                            <label for="meat-and-fish1">Meat and fish1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="meat-and-fish" value="meat-and-fish2" id="meat-and-fish2">
-                            <label for="meat-and-fish2">Meat and fish2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="meat-and-fish" value="meat-and-fish3" id="meat-and-fish3">
-                            <label for="meat-and-fish3">Meat and fish3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__drinks">
-                    Drinks
-                    <ul class="sub-menu__list_drinks">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="drinks" value="drinks1" id="drinks1">
-                            <label for="drinks1">Drinks1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="drinks" value="drinks2" id="drinks2">
-                            <label for="drinks2">Drinks2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="drinks" value="drinks3" id="drinks3">
-                            <label for="drinks3">Drinks3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__kitchen">
-                    Kitchen
-                    <ul class="sub-menu__list_kitchen">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="kitchen" value="kitchen1" id="kitchen1">
-                            <label for="kitchen1">Kitchen1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="kitchen" value="kitchen2" id="kitchen2">
-                            <label for="kitchen2">Kitchen2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="kitchen" value="kitchen3" id="kitchen3">
-                            <label for="kitchen3">Kitchen3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__special-nutrition">
-                    Special nutrition
-                    <ul class="sub-menu__list_special-nutrition">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="special-nutrition" value="special-nutrition1" id="special-nutrition1">
-                            <label for="special-nutrition1">Special nutrition1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="special-nutrition" value="special-nutrition2" id="special-nutrition2">
-                            <label for="special-nutrition2">Special nutrition2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="special-nutrition" value="special-nutrition3" id="special-nutrition3">
-                            <label for="special-nutrition3">Special nutrition3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__baby">
-                    Baby
-                    <ul class="sub-menu__list_baby">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="baby" value="baby1" id="baby1">
-                            <label for="baby1">Baby1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="baby" value="baby2" id="baby2">
-                            <label for="baby2">Baby2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="baby" value="baby3" id="baby3">
-                            <label for="baby3">Baby3</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="categories-menu__item sub-menu__pharmacy">
-                    Pharmacy
-                    <ul class="sub-menu__list_pharmacy">
-                        <li class="sub-menu__item">
-                            <input type="radio" name="pharmacy" value="pharmacy1" id="pharmacy1">
-                            <label for="pharmacy1">Pharmacy1</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="pharmacy" value="pharmacy2" id="pharmacy2">
-                            <label for="pharmacy2">Pharmacy2</label>
-                        </li>
-                        <li class="sub-menu__item">
-                            <input type="radio" name="pharmacy" value="pharmacy3" id="pharmacy3">
-                            <label for="pharmacy3">Pharmacy3</label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--- hiding location on the first page
+            <div class="header__categories">
+                <ul class="header__categories-menu categories-menu">
+                    <li class="categories-menu__item sub-menu__bakery">
+                        Bakery
+                        <ul class="sub-menu__list_bakery">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="bakery" value="bakeimry1" id="bakery1">
+                                <label for="bakery1">Bakery1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="bakery" value="bakery2" id="bakery2">
+                                <label for="bakery2">Bakery2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="bakery" value="bakery3" id="bakery3">
+                                <label for="bakery3">Bakery3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__fruit-and-vegetables">
+                        Fruit and vegetables
+                        <ul class="sub-menu__list_fruit-and-vegetables">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables1"
+                                    id="fruit-and-vegetables1">
+                                <label for="fruit-and-vegetables1">Fruit and vegetables1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables2"
+                                    id="fruit-and-vegetables2">
+                                <label for="fruit-and-vegetables2">Fruit and vegetables2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="fruit-and-vegetables" value="fruit-and-vegetables3"
+                                    id="fruit-and-vegetables3">
+                                <label for="fruit-and-vegetables3">Fruit and vegetables3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__meat-and-fish">
+                        Meat and fish
+                        <ul class="sub-menu__list_meat-and-fish">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="meat-and-fish" value="meat-and-fish1" id="meat-and-fish1">
+                                <label for="meat-and-fish1">Meat and fish1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="meat-and-fish" value="meat-and-fish2" id="meat-and-fish2">
+                                <label for="meat-and-fish2">Meat and fish2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="meat-and-fish" value="meat-and-fish3" id="meat-and-fish3">
+                                <label for="meat-and-fish3">Meat and fish3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__drinks">
+                        Drinks
+                        <ul class="sub-menu__list_drinks">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="drinks" value="drinks1" id="drinks1">
+                                <label for="drinks1">Drinks1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="drinks" value="drinks2" id="drinks2">
+                                <label for="drinks2">Drinks2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="drinks" value="drinks3" id="drinks3">
+                                <label for="drinks3">Drinks3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__kitchen">
+                        Kitchen
+                        <ul class="sub-menu__list_kitchen">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="kitchen" value="kitchen1" id="kitchen1">
+                                <label for="kitchen1">Kitchen1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="kitchen" value="kitchen2" id="kitchen2">
+                                <label for="kitchen2">Kitchen2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="kitchen" value="kitchen3" id="kitchen3">
+                                <label for="kitchen3">Kitchen3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__special-nutrition">
+                        Special nutrition
+                        <ul class="sub-menu__list_special-nutrition">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="special-nutrition" value="special-nutrition1"
+                                    id="special-nutrition1">
+                                <label for="special-nutrition1">Special nutrition1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="special-nutrition" value="special-nutrition2"
+                                    id="special-nutrition2">
+                                <label for="special-nutrition2">Special nutrition2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="special-nutrition" value="special-nutrition3"
+                                    id="special-nutrition3">
+                                <label for="special-nutrition3">Special nutrition3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__baby">
+                        Baby
+                        <ul class="sub-menu__list_baby">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="baby" value="baby1" id="baby1">
+                                <label for="baby1">Baby1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="baby" value="baby2" id="baby2">
+                                <label for="baby2">Baby2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="baby" value="baby3" id="baby3">
+                                <label for="baby3">Baby3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-menu__item sub-menu__pharmacy">
+                        Pharmacy
+                        <ul class="sub-menu__list_pharmacy">
+                            <li class="sub-menu__item">
+                                <input type="radio" name="pharmacy" value="pharmacy1" id="pharmacy1">
+                                <label for="pharmacy1">Pharmacy1</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="pharmacy" value="pharmacy2" id="pharmacy2">
+                                <label for="pharmacy2">Pharmacy2</label>
+                            </li>
+                            <li class="sub-menu__item">
+                                <input type="radio" name="pharmacy" value="pharmacy3" id="pharmacy3">
+                                <label for="pharmacy3">Pharmacy3</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--- hiding location on the first page
         <div class="header__location _container">
             <div class="header__location_previous-location"><a href="#">Homepage</a></div>
             <div class="header__location_current-location"><a href="#">Fruit and vegetables</a></div>
         </div>
         --->
 
-    </header>
+        </header>
 
-    <main class="main">
-        <!---********* banner-section START*********--->
-        <section class="banner-section _container">
-            <div class="banner-section__box">
-                <!---Menu start--->
-                <div class="banner-section__menu section__menu">
-                    <h2 class="section__menu-caption caption_h2">Category menu</h2>
-                    <ul class="section__menu-list">
-                        <li class="section__menu-list-item"><a href="#">Bakery</a></li>
-                        <li class="section__menu-list-item"><a href="#">Fruit and vegetables</a></li>
-                        <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
-                        <li class="section__menu-list-item"><a href="#">Drinks</a></li>
-                        <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Special nutrition</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Baby</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Pharmacy</a></li>
-                    </ul>
-                    <button class="section__menu-button btn btn-label">More categories</button>
-                </div>
-                <!---Menu end--->
-                <!---Banner start--->
-                <div class="banner-section__banner">
-                    <div class="banner-section__banner-subfocus">Banner subfocus</div>
-                    <div class="banner-section__banner-heading">Space for heading</div>
-                    <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
-                </div>
-                <!---Banner end--->
-                <!---Banner start--->
-                <div class="banner-section__banner">
-                    <div class="banner-section__banner-subfocus">Banner subfocus</div>
-                    <div class="banner-section__banner-heading">Space for heading</div>
-                    <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
-                </div>
-                <!---Banner end--->
+        <main class="main">
+            <!---********* banner-section START*********--->
+            <section class="banner-section _container">
+                <div class="banner-section__box">
+                    <!---Menu start--->
+                    <div class="banner-section__menu section__menu">
+                        <h2 class="section__menu-caption caption_h2">Category menu</h2>
+                        <ul class="section__menu-list">
+                            <li class="section__menu-list-item"><a href="#">Bakery</a></li>
+                            <li class="section__menu-list-item"><a href="#">Fruit and vegetables</a></li>
+                            <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
+                            <li class="section__menu-list-item"><a href="#">Drinks</a></li>
+                            <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Special nutrition</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Baby</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Pharmacy</a></li>
+                        </ul>
+                        <button class="section__menu-button btn btn-label" data-button-name="categories">More
+                            categories</button>
+                    </div>
+                    <!---Menu end--->
+                    <!---Banner start--->
+                    <div class="banner-section__banner">
+                        <div class="banner-section__banner-subfocus">Banner subfocus</div>
+                        <div class="banner-section__banner-heading">Space for heading</div>
+                        <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
+                    </div>
+                    <!---Banner end--->
+                    <!---Banner start--->
+                    <div class="banner-section__banner">
+                        <div class="banner-section__banner-subfocus">Banner subfocus</div>
+                        <div class="banner-section__banner-heading">Space for heading</div>
+                        <button class="banner-section__banner-button btn-label-green btn-banner">Read recepies</button>
+                    </div>
+                    <!---Banner end--->
 
-            </div>
-        </section>
-        <!---********* banner-section END*********--->
-        <!---********* best-selling-section START*********--->
-        <section class="best-selling-section _container">
-            <div class="section__box">
-                <!---Menu start--->
-                <div class="best-selling-section__menu section__menu">
-                    <h2 class="section__menu-caption caption_h2">Best selling products</h2>
-                    <ul class="section__menu-list">
-                        <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
-                        <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
-                        <li class="section__menu-list-item"><a href="#">Special nutrition</a></li>
-                        <li class="section__menu-list-item"><a href="#">Pharmacy</a></li>
-                        <li class="section__menu-list-item"><a href="#">Baby</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Special nutrition</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Baby</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Pharmacy</a></li>
-                    </ul>
-                    <button class="section__menu-button btn btn-label">More products</button>
                 </div>
-                <!---Menu end--->
-                <!---Card start--->
-                <div class="best-selling-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
+            </section>
+            <!---********* banner-section END*********--->
+            <!---********* best-selling-section START*********--->
+            <section class="best-selling-section _container">
+                <div class="section__box">
+                    <!---Menu start--->
+                    <div class="best-selling-section__menu section__menu">
+                        <h2 class="section__menu-caption caption_h2">Best selling products</h2>
+                        <ul class="section__menu-list">
+                            <li class="section__menu-list-item"><a href="#">Kitchen</a></li>
+                            <li class="section__menu-list-item"><a href="#">Meat and fish</a></li>
+                            <li class="section__menu-list-item"><a href="#">Special nutrition</a></li>
+                            <li class="section__menu-list-item"><a href="#">Pharmacy</a></li>
+                            <li class="section__menu-list-item"><a href="#">Baby</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Special nutrition</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Baby</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Pharmacy</a></li>
+                        </ul>
+                        <button class="section__menu-button btn btn-label" data-button-name="products">More
+                            products</button>
+                    </div>
+                    <!---Menu end--->
+                    <!---Card start--->
+                    <div class="best-selling-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="best-selling-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="best-selling-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
+                    <!---Card end--->
+                    <!---Card start--->
+                    <div class="best-selling-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!---Card end--->
+                    <!---Card start--->
+                    <div class="best-selling-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Card end--->
                 </div>
-                <!---Card end--->
-            </div>
-        </section>
-        <!---********* best-selling-section END*********--->
+            </section>
+            <!---********* best-selling-section END*********--->
 
-        <!---********* farmers-section START*********--->
-        <section class="farmers-section _container">
-            <div class="section__box">
-                <!---Menu start--->
-                <div class="farmers-section__menu section__menu">
-                    <h2 class="section__menu-caption caption_h2">Best from Farmers</h2>
-                    <ul class="section__menu-list">
-                        <li class="section__menu-list-item"><a href="#">Carrots</a></li>
-                        <li class="section__menu-list-item"><a href="#">Tomatoes</a></li>
-                        <li class="section__menu-list-item"><a href="#">Potatoes</a></li>
-                        <li class="section__menu-list-item"><a href="#">Chicken</a></li>
-                        <li class="section__menu-list-item"><a href="#">Pork</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Flour</a></li>
-                        <li class="section__menu-list-item hidden"><a href="#">Nuts</a></li>
-                    </ul>
-                    <button class="section__menu-button btn btn-label">More products</button>
-                </div>
-                <!---Menu end--->
-                <!---Card start--->
-                <div class="farmers-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
+            <!---********* farmers-section START*********--->
+            <section class="farmers-section _container">
+                <div class="section__box">
+                    <!---Menu start--->
+                    <div class="farmers-section__menu section__menu">
+                        <h2 class="section__menu-caption caption_h2">Best from Farmers</h2>
+                        <ul class="section__menu-list">
+                            <li class="section__menu-list-item"><a href="#">Carrots</a></li>
+                            <li class="section__menu-list-item"><a href="#">Tomatoes</a></li>
+                            <li class="section__menu-list-item"><a href="#">Potatoes</a></li>
+                            <li class="section__menu-list-item"><a href="#">Chicken</a></li>
+                            <li class="section__menu-list-item"><a href="#">Pork</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Flour</a></li>
+                            <li class="section__menu-list-item hidden"><a href="#">Nuts</a></li>
+                        </ul>
+                        <button class="section__menu-button btn btn-label" data-button-name="products">More
+                            products</button>
+                    </div>
+                    <!---Menu end--->
+                    <!---Card start--->
+                    <div class="farmers-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="farmers-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="farmers-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
+                    <!---Card end--->
+                    <!---Card start--->
+                    <div class="farmers-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!---Card end--->
+                    <!---Card start--->
+                    <div class="farmers-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Card end--->
                 </div>
-                <!---Card end--->
-            </div>
-        </section>
-        <!---********* farmers-section END*********--->
+            </section>
+            <!---********* farmers-section END*********--->
 
-        <!---********* customers-reviews START*********--->
-        <section class="customers-reviews">
-            <div class="customers-reviews__box">
-                <!---Title end--->
-                <div class="customers-reviews__title-box section-title _container">
-                    <h2 class="caption_h2">Our customers says</h2>
+            <!---********* customers-reviews START*********--->
+            <section class="customers-reviews">
+                <div class="customers-reviews__box">
+                    <!---Title end--->
+                    <div class="customers-reviews__title-box section-title _container">
+                        <h2 class="caption_h2">Our customers says</h2>
+                        <button class="btn-transparent">Button</button>
+                    </div>
+                    <!---Title end--->
+                    <!---customers-reviews__content-box START--->
+                    <div class="customers-reviews__content-box">
+                        <button class="customers-reviews__switcher customers-reviews__switcher_left">
+                            <img src="img/buttons/review-switcher-button.png" height="52" width="34" />
+                        </button>
+                        <div class="customers-reviews__card-box">
+                            <!---Card start--->
+                            <div class="customers-reviews__content-card">
+                                <blockquote class="customers-reviews__content-card-text">
+                                    “ This is an super space for your customers qoute. Don’t worry it works smooth as
+                                    pie. You will get all what you need by writiing a text here “
+                                </blockquote>
+                                <cite class="customers-reviews__content-card-username">
+                                    Name and Surname
+                                </cite>
+                                <picture class="customers-reviews__content-card-avatar">
+                                    <img src="img/avatars/avatar1.jpg" height="49" width="48" />
+                                </picture>
+                            </div>
+                            <!---Card end--->
+                            <!---Card start--->
+                            <div class="customers-reviews__content-card">
+                                <blockquote class="customers-reviews__content-card-text">
+                                    “ This is an super space for your customers qoute. Don’t worry it works smooth as
+                                    pie. You will get all what you need by writiing a text here “
+                                </blockquote>
+                                <cite class="customers-reviews__content-card-username">
+                                    Name and Surname
+                                </cite>
+                                <picture class="customers-reviews__content-card-avatar">
+                                    <img src="img/avatars/avatar1.jpg" height="49" width="48" />
+                                </picture>
+                            </div>
+                            <!---Card end--->
+                            <!---Card start--->
+                            <div class="customers-reviews__content-card">
+                                <blockquote class="customers-reviews__content-card-text">
+                                    “ This is an super space for your customers qoute. Don’t worry it works smooth as
+                                    pie. You will get all what you need by writiing a text here “
+                                </blockquote>
+                                <cite class="customers-reviews__content-card-username">
+                                    Name and Surname
+                                </cite>
+                                <picture class="customers-reviews__content-card-avatar">
+                                    <img src="img/avatars/avatar1.jpg" alt="avatar">
+                                </picture>
+                            </div>
+                            <!---Card end--->
+                            <!---Card start--->
+                            <div class="customers-reviews__content-card">
+                                <blockquote class="customers-reviews__content-card-text">
+                                    “ This is an super space for your customers qoute. Don’t worry it works smooth as
+                                    pie. You will get all what you need by writiing a text here “
+                                </blockquote>
+                                <cite class="customers-reviews__content-card-username">
+                                    Name and Surname
+                                </cite>
+                                <picture class="customers-reviews__content-card-avatar">
+                                    <img src="img/avatars/avatar1.jpg" height="49" width="48" />
+                                </picture>
+                            </div>
+                            <!---Card end--->
+                        </div>
+                        <button class="customers-reviews__switcher customers-reviews__switcher_right">
+                            <img src="img/buttons/review-switcher-button.png" height="52" width="34" />
+                        </button>
+                    </div>
+                    <!---customers-reviews__content-box end--->
+                </div>
+            </section>
+            <!---********* customers-reviews END*********--->
+
+            <!---********* headline-section START*********--->
+            <section class="headline-section _container">
+                <div class="headline-section__title-box section-title">
+                    <h2 class="caption_h2">Section Headline</h2>
                     <button class="btn-transparent">Button</button>
                 </div>
-                <!---Title end--->
-                <!---customers-reviews__content-box START--->
-                <div class="customers-reviews__content-box">
-                    <button class="customers-reviews__switcher customers-reviews__switcher_left">
-                        <img src="img/buttons/review-switcher-button.png" height="52" width="34"/>
-                    </button>
-                    <div class="customers-reviews__card-box">
+                <div class="section__box">
                     <!---Card start--->
-                    <div class="customers-reviews__content-card">
-                        <blockquote class="customers-reviews__content-card-text">
-                            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
-                        </blockquote>
-                        <cite class="customers-reviews__content-card-username">
-                            Name and Surname
-                        </cite>
-                        <picture class="customers-reviews__content-card-avatar">
-                            <img src="img/avatars/avatar1.jpg" height="49" width="48"/>
-                        </picture>
+                    <div class="headline-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!---Card end--->
                     <!---Card start--->
-                    <div class="customers-reviews__content-card">
-                        <blockquote class="customers-reviews__content-card-text">
-                            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
-                        </blockquote>
-                        <cite class="customers-reviews__content-card-username">
-                            Name and Surname
-                        </cite>
-                        <picture class="customers-reviews__content-card-avatar">
-                            <img src="img/avatars/avatar1.jpg" height="49" width="48"/>
-                        </picture>
+                    <div class="headline-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!---Card end--->
                     <!---Card start--->
-                    <div class="customers-reviews__content-card">
-                        <blockquote class="customers-reviews__content-card-text">
-                            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
-                        </blockquote>
-                        <cite class="customers-reviews__content-card-username">
-                            Name and Surname
-                        </cite>
-                        <picture class="customers-reviews__content-card-avatar">
-                            <img src="img/avatars/avatar1.jpg" alt="avatar">
-                        </picture>
+                    <div class="headline-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!---Card end--->
                     <!---Card start--->
-                    <div class="customers-reviews__content-card">
-                        <blockquote class="customers-reviews__content-card-text">
-                            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
-                        </blockquote>
-                        <cite class="customers-reviews__content-card-username">
-                            Name and Surname
-                        </cite>
-                        <picture class="customers-reviews__content-card-avatar">
-                            <img src="img/avatars/avatar1.jpg" height="49" width="48"/>
-                        </picture>
+                    <div class="headline-section__content section__content">
+                        <div class="section__content-card">
+                            <div class="section__content-card-picture">
+                                <img class="section__content-card-picture-img" src="img/product-title.jpg"
+                                    alt="product"></div>
+                            <div class="section__content-card-sale">- 36 %</div>
+                            <div class="section__content-card-title">Product Title</div>
+                            <div class="section__content-card-description">Space for a small product description</div>
+                            <div class="section__content-card-price-box">
+                                <div class="section__content-card-price">
+                                    <span>0.28 USD</span><br>
+                                    <span class="section__content-card-priceoff">48.56</span>
+                                </div>
+                                <div class="section__content-card-button">
+                                    <button class="btn-buy-now">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                        <!---Card end--->
-                    </div>
-                    <button class="customers-reviews__switcher customers-reviews__switcher_right">
-                        <img src="img/buttons/review-switcher-button.png" height="52" width="34"/>
-                    </button>
+                    <!---Card end--->
                 </div>
-                <!---customers-reviews__content-box end--->
-            </div>
-        </section>
-        <!---********* customers-reviews END*********--->
+            </section>
+            <!---********* headline-section END*********--->
 
-        <!---********* headline-section START*********--->
-        <section class="headline-section _container">
-            <div class="headline-section__title-box section-title">
-                <h2 class="caption_h2">Section Headline</h2>
-                <button class="btn-transparent">Button</button>
-            </div>
-            <div class="section__box">
-                <!---Card start--->
-                <div class="headline-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
+            <!---********* blog-section START*********--->
+            <section class="blog-section _container">
+                <div class="blog-section__title-box section-title">
+                    <h2 class="caption_h2">Read our Blog posts</h2>
+                    <button class="btn-transparent">Go to Blog</button>
                 </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="headline-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="headline-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---Card end--->
-                <!---Card start--->
-                <div class="headline-section__content section__content">
-                    <div class="section__content-card">
-                        <div class="section__content-card-picture">
-                            <img class="section__content-card-picture-img" src="img/product-title.jpg" alt="product"></div>
-                        <div class="section__content-card-sale">- 36 %</div>
-                        <div class="section__content-card-title">Product Title</div>
-                        <div class="section__content-card-description">Space for a small product description</div>
-                        <div class="section__content-card-price-box">
-                            <div class="section__content-card-price">
-                                <span>0.28 USD</span><br>
-                                <span class="section__content-card-priceoff">48.56</span>
-                            </div>
-                            <div class="section__content-card-button">
-                                <button class="btn-buy-now">Buy now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---Card end--->
-            </div>
-        </section>
-        <!---********* headline-section END*********--->
-
-        <!---********* blog-section START*********--->
-        <section class="blog-section _container">
-            <div class="blog-section__title-box section-title">
-                <h2 class="caption_h2">Read our Blog posts</h2>
-                <button class="btn-transparent">Go to Blog</button>
-            </div>
-            <div class="blog-section__content-box">
-                <!---blog-article__big-section START--->
-                <div class="blog-article blog-article__big-section">
+                <div class="blog-section__content-box">
+                    <!---blog-article__big-section START--->
+                    <div class="blog-article blog-article__big-section">
                         <div class="blog-article__tag">
                             Dinner tips
                         </div>
                         <h1 class="blog-article__big-section-title">
-                            <a class="caption_h1" href="#">Our chef tips for a great and tasty dinner ready in 20 minutes</a>
+                            <a class="caption_h1" href="#">Our chef tips for a great and tasty dinner ready in 20
+                                minutes</a>
                         </h1>
                         <div class="blog-article__big-section-info blog-article__info">
                             <div class="blog-article__avatar">
@@ -651,179 +681,187 @@
                                 17. 6. 2020
                             </time>
                         </div>
-                </div>
-                <!---blog-article__big-section END--->
-                <!---blog-article__medium-section START--->
-                <div class="blog-article blog-article__medium-section">
-                    <picture class="blog-article__medium-section-picture">
-                        <img src="img/blog-section/blog-article__medium-section/article_medium.jpg" alt="food picture">
-                    </picture>
-                    <div class="blog-article__medium-section-tag blog-article__tag">
-                        Vegetable
                     </div>
-                    <h2 class="blog-article__medium-section-caption caption_h2">
-                        <a href="#">
-                            Which vegetable your family will love and want’s eat each day
-                        </a>
-                    </h2>
-                    <div class="blog-article__info">
-                        <div class="blog-article__info-text">
-                            Author
-                        </div>
-                        <time datetime="15-06-2020" class="blog-article__info-text">
-                            15. 6. 2020
-                        </time>
-                    </div>
-                </div>
-                <!---blog-article__medium-section END--->
-                <!---blog-article__medium-section START--->
-                <div class="blog-article blog-article__small-section">
-                    <!---blog-article__small-section-post START--->
-                    <div class="blog-article__small-section-post">
-                        <div class="blog-article__small-section-text">
-                            <h3 class="blog-article__small-section-caption">
-                                <a class="caption_h3" href="#">
-                                    Salat is kinda good start to your morning routines
-                                </a>
-                            </h3>
-                            <div class="blog-article__small-section-info blog-article__info">
-                                <div class="blog-article__info-text">
-                                    Author
-                                </div>
-                                <time datetime="14-01-2020" class="blog-article__info-text">
-                                    14. 1. 2020
-                                </time>
-                            </div>
-                        </div>
-                        <picture class="blog-article__small-section-picture">
-                            <img src="img/blog-section/blog-article__small-section/article__small_1.jpg" alt="food picture">
+                    <!---blog-article__big-section END--->
+                    <!---blog-article__medium-section START--->
+                    <div class="blog-article blog-article__medium-section">
+                        <picture class="blog-article__medium-section-picture">
+                            <img src="img/blog-section/blog-article__medium-section/article_medium.jpg"
+                                alt="food picture">
                         </picture>
-                    </div>
-                    <!---blog-article__small-section-post END--->
-                    <!---blog-article__small-section-post START--->
-                    <div class="blog-article__small-section-post">
-                        <div class="blog-article__small-section-text">
-                            <h3 class="blog-article__small-section-caption caption_h3">
-                                <a class="caption_h3" href="#">
-                                    Our chef tips for a great and healthy breakfast
-                                </a>
-                            </h3>
-                            <div class="blog-article__small-section-info blog-article__info">
-                                <div class="blog-article__info-text">
-                                    Author
-                                </div>
-                                <time datetime="14-01-2020" class="blog-article__info-text">
-                                    14. 1. 2020
-                                </time>
-                            </div>
+                        <div class="blog-article__medium-section-tag blog-article__tag">
+                            Vegetable
                         </div>
-                        <picture class="blog-article__small-section-picture">
-                            <img src="img/blog-section/blog-article__small-section/article__small_2.jpg" alt="food picture">
-                        </picture>
-                    </div>
-                    <!---blog-article__small-section-post END--->
-                    <!---blog-article__small-section-post START--->
-                    <div class="blog-article__small-section-post">
-                        <div class="blog-article__small-section-text">
-                            <h3 class="blog-article__small-section-caption caption_h3">
-                                <a class="caption_h3" href="#">Prepare a simple and delicious breads
-                                </a>
-                            </h3>
-                            <div class="blog-article__small-section-info blog-article__info">
-                                <div class="blog-article__info-text">
-                                    Author
-                                </div>
-                                <time datetime="14-01-2020" class="blog-article__info-text">
-                                    14. 1. 2020
-                                </time>
+                        <h2 class="blog-article__medium-section-caption caption_h2">
+                            <a href="#">
+                                Which vegetable your family will love and want’s eat each day
+                            </a>
+                        </h2>
+                        <div class="blog-article__info">
+                            <div class="blog-article__info-text">
+                                Author
                             </div>
+                            <time datetime="15-06-2020" class="blog-article__info-text">
+                                15. 6. 2020
+                            </time>
                         </div>
-                        <picture class="blog-article__small-section-picture">
-                            <img src="img/blog-section/blog-article__small-section/article__small_3.jpg" alt="food picture">
-                        </picture>
                     </div>
-                    <!---blog-article__small-section-post END--->
+                    <!---blog-article__medium-section END--->
+                    <!---blog-article__medium-section START--->
+                    <div class="blog-article blog-article__small-section">
+                        <!---blog-article__small-section-post START--->
+                        <div class="blog-article__small-section-post">
+                            <div class="blog-article__small-section-text">
+                                <h3 class="blog-article__small-section-caption">
+                                    <a class="caption_h3" href="#">
+                                        Salat is kinda good start to your morning routines
+                                    </a>
+                                </h3>
+                                <div class="blog-article__small-section-info blog-article__info">
+                                    <div class="blog-article__info-text">
+                                        Author
+                                    </div>
+                                    <time datetime="14-01-2020" class="blog-article__info-text">
+                                        14. 1. 2020
+                                    </time>
+                                </div>
+                            </div>
+                            <picture class="blog-article__small-section-picture">
+                                <img src="img/blog-section/blog-article__small-section/article__small_1.jpg"
+                                    alt="food picture">
+                            </picture>
+                        </div>
+                        <!---blog-article__small-section-post END--->
+                        <!---blog-article__small-section-post START--->
+                        <div class="blog-article__small-section-post">
+                            <div class="blog-article__small-section-text">
+                                <h3 class="blog-article__small-section-caption caption_h3">
+                                    <a class="caption_h3" href="#">
+                                        Our chef tips for a great and healthy breakfast
+                                    </a>
+                                </h3>
+                                <div class="blog-article__small-section-info blog-article__info">
+                                    <div class="blog-article__info-text">
+                                        Author
+                                    </div>
+                                    <time datetime="14-01-2020" class="blog-article__info-text">
+                                        14. 1. 2020
+                                    </time>
+                                </div>
+                            </div>
+                            <picture class="blog-article__small-section-picture">
+                                <img src="img/blog-section/blog-article__small-section/article__small_2.jpg"
+                                    alt="food picture">
+                            </picture>
+                        </div>
+                        <!---blog-article__small-section-post END--->
+                        <!---blog-article__small-section-post START--->
+                        <div class="blog-article__small-section-post">
+                            <div class="blog-article__small-section-text">
+                                <h3 class="blog-article__small-section-caption caption_h3">
+                                    <a class="caption_h3" href="#">Prepare a simple and delicious breads
+                                    </a>
+                                </h3>
+                                <div class="blog-article__small-section-info blog-article__info">
+                                    <div class="blog-article__info-text">
+                                        Author
+                                    </div>
+                                    <time datetime="14-01-2020" class="blog-article__info-text">
+                                        14. 1. 2020
+                                    </time>
+                                </div>
+                            </div>
+                            <picture class="blog-article__small-section-picture">
+                                <img src="img/blog-section/blog-article__small-section/article__small_3.jpg"
+                                    alt="food picture">
+                            </picture>
+                        </div>
+                        <!---blog-article__small-section-post END--->
+                    </div>
+                    <!---blog-article__medium-section END--->
+
+
                 </div>
-                <!---blog-article__medium-section END--->
 
+            </section>
+            <!---********* blog-section END*********--->
+        </main>
 
+        <footer class="footer _container">
+
+            <div class="footer__links">
+                <div class="footer__get-in-touch">
+                    <h2 class="footer__links-caption caption_h2">Get in touch</h2>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list-item"><a href="#">About Us</a></li>
+                        <li class="footer__links-list-item"><a href="#">Careers</a></li>
+                        <li class="footer__links-list-item"><a href="#">Press Releases</a></li>
+                        <li class="footer__links-list-item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__connections">
+                    <h2 class="footer__links-caption caption_h2">Connections</h2>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list-item"><a href="#">Facebook</a></li>
+                        <li class="footer__links-list-item"><a href="#">Twitter</a></li>
+                        <li class="footer__links-list-item"><a href="#">Instagram</a></li>
+                        <li class="footer__links-list-item"><a href="#">Youtube</a></li>
+                        <li class="footer__links-list-item"><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer__earnings">
+                    <h2 class="footer__links-caption caption_h2">Earnings</h2>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list-item"><a href="#">Become an Affiliate</a></li>
+                        <li class="footer__links-list-item"><a href="#">Advertise your product</a></li>
+                        <li class="footer__links-list-item"><a href="#">Sell on Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer__account">
+                    <h2 class="footer__links-caption caption_h2">Account</h2>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list-item"><a href="#">Your account</a></li>
+                        <li class="footer__links-list-item"><a href="#">Returns Centre</a></li>
+                        <li class="footer__links-list-item"><a href="#">100 % purchase protection</a></li>
+                        <li class="footer__links-list-item"><a href="#">Chat with us</a></li>
+                        <li class="footer__links-list-item"><a href="#">Help</a></li>
+                    </ul>
+                </div>
             </div>
-
-        </section>
-        <!---********* blog-section END*********--->
-    </main>
-
-    <footer class="footer _container">
-
-        <div class="footer__links">
-            <div class="footer__get-in-touch">
-                <h2 class="footer__links-caption caption_h2">Get in touch</h2>
-                <ul class="footer__links-list">
-                    <li class="footer__links-list-item"><a href="#">About Us</a></li>
-                    <li class="footer__links-list-item"><a href="#">Careers</a></li>
-                    <li class="footer__links-list-item"><a href="#">Press Releases</a></li>
-                    <li class="footer__links-list-item"><a href="#">Blog</a></li>
+            <div class="footer__product-tags">
+                <h2 class="footer__product-tags-caption caption_h2">Product tags</h2>
+                <ul class="footer__product-tags-list product-tags-list">
+                    <li class="product-tags-list__item">Beans</li>
+                    <li class="product-tags-list__item">Carrots</li>
+                    <li class="product-tags-list__item">Apples</li>
+                    <li class="product-tags-list__item">Garlic</li>
+                    <li class="product-tags-list__item">Mushrooms</li>
+                    <li class="product-tags-list__item">Tomatoes</li>
+                    <li class="product-tags-list__item">Chilli peppers</li>
+                    <li class="product-tags-list__item">Broccoli</li>
+                    <li class="product-tags-list__item">Watermelons</li>
+                    <li class="product-tags-list__item">Oranges</li>
+                    <li class="product-tags-list__item">Bananas</li>
+                    <li class="product-tags-list__item">Grapes</li>
+                    <li class="product-tags-list__item">Cherries</li>
+                    <li class="product-tags-list__item">Meat</li>
+                    <li class="product-tags-list__item">Seo tag</li>
+                    <li class="product-tags-list__item">Fish</li>
+                    <li class="product-tags-list__item">Seo tag</li>
+                    <li class="product-tags-list__item">Fresh food</li>
+                    <li class="product-tags-list__item">Lemons</li>
                 </ul>
-            </div>
-            <div class="footer__connections">
-                <h2 class="footer__links-caption caption_h2">Connections</h2>
-                <ul class="footer__links-list">
-                    <li class="footer__links-list-item"><a href="#">Facebook</a></li>
-                    <li class="footer__links-list-item"><a href="#">Twitter</a></li>
-                    <li class="footer__links-list-item"><a href="#">Instagram</a></li>
-                    <li class="footer__links-list-item"><a href="#">Youtube</a></li>
-                    <li class="footer__links-list-item"><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-            <div class="footer__earnings">
-                <h2 class="footer__links-caption caption_h2">Earnings</h2>
-                <ul class="footer__links-list">
-                    <li class="footer__links-list-item"><a href="#">Become an Affiliate</a></li>
-                    <li class="footer__links-list-item"><a href="#">Advertise your product</a></li>
-                    <li class="footer__links-list-item"><a href="#">Sell on Market</a></li>
-                </ul>
-            </div>
-            <div class="footer__account">
-                <h2 class="footer__links-caption caption_h2">Account</h2>
-                <ul class="footer__links-list">
-                    <li class="footer__links-list-item"><a href="#">Your account</a></li>
-                    <li class="footer__links-list-item"><a href="#">Returns Centre</a></li>
-                    <li class="footer__links-list-item"><a href="#">100 % purchase protection</a></li>
-                    <li class="footer__links-list-item"><a href="#">Chat with us</a></li>
-                    <li class="footer__links-list-item"><a href="#">Help</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__product-tags">
-            <h2 class="footer__product-tags-caption caption_h2">Product tags</h2>
-            <ul class="footer__product-tags-list product-tags-list">
-                <li class="product-tags-list__item">Beans</li>
-                <li class="product-tags-list__item">Carrots</li>
-                <li class="product-tags-list__item">Apples</li>
-                <li class="product-tags-list__item">Garlic</li>
-                <li class="product-tags-list__item">Mushrooms</li>
-                <li class="product-tags-list__item">Tomatoes</li>
-                <li class="product-tags-list__item">Chilli peppers</li>
-                <li class="product-tags-list__item">Broccoli</li>
-                <li class="product-tags-list__item">Watermelons</li>
-                <li class="product-tags-list__item">Oranges</li>
-                <li class="product-tags-list__item">Bananas</li>
-                <li class="product-tags-list__item">Grapes</li>
-                <li class="product-tags-list__item">Cherries</li>
-                <li class="product-tags-list__item">Meat</li>
-                <li class="product-tags-list__item">Seo tag</li>
-                <li class="product-tags-list__item">Fish</li>
-                <li class="product-tags-list__item">Seo tag</li>
-                <li class="product-tags-list__item">Fresh food</li>
-                <li class="product-tags-list__item">Lemons</li>
-            </ul>
 
-        </div>
-        <div class="footer__copyright">Copyright © 2020 petrbilek.com</div>
+            </div>
+            <div class="footer__copyright">Copyright © 2020 petrbilek.com</div>
 
-    </footer>
+        </footer>
 
-</div>
-<script src="js\categoriesOpen.js"></script>
+    </div>
+    <script src="js\categoriesOpen.js"></script>
+    <script src="js/categorySearchSelection.js"></script>
+
+    <!---<script src="js\PISsK.js"></script>--->
 </body>
+
 </html>
