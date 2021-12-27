@@ -82,4 +82,7 @@
   /*16px*/
   background: url("../img/buttons/arrow-green.svg") no-repeat;
 }
-/*# sourceMappingURL=buttons.css.map */
+.shopping-cart-window__close-button {
+  background: none;
+  border: none;
+}

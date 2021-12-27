@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/js.css">
+    <link rel="stylesheet" href="./css/shopping-cart.css">
+
     <!---Подключаем шрифты--->
     <link rel="stylesheet" href="css/fonts/open-sans-v26-latin/font_open-sans.css">
     <link rel="stylesheet" href="css/fonts/poppins-v15-latin/font-poppins.css">
@@ -484,7 +486,7 @@
                     <!---Title end--->
                     <div class="customers-reviews__title-box section-title _container">
                         <h2 class="caption_h2">Our customers says</h2>
-                        <button class="btn-transparent">Button</button>
+                        <button class="btn-transparent">View more</button>
                     </div>
                     <!---Title end--->
                     <!---customers-reviews__content-box START--->
@@ -563,7 +565,7 @@
             <section class="headline-section _container">
                 <div class="headline-section__title-box section-title">
                     <h2 class="caption_h2">Section Headline</h2>
-                    <button class="btn-transparent">Button</button>
+                    <button class="btn-transparent">View more</button>
                 </div>
                 <div class="section__box">
                     <!---Card start--->
@@ -857,7 +859,72 @@
 
         </footer>
 
+
+
     </div>
+    <!---*********shopping-cart START*********--->
+    <section class="shopping-cart-window">
+        <header class="shopping-cart-window__title-box section-title">
+            <h2 class="shopping-cart-window__title-text">Shopping cart</h2>
+            <button class="shopping-cart-window__close-button">
+                <span class="shopping-cart-window_description-font">Close</span>
+                <img src="img/shopping-cart-window/ic-actions-close.png">
+            </button>
+        </header>
+
+        <section class="shopping-cart-window__products">
+            <ul class="shopping-cart-window__products-list">
+                <li class="shopping-cart-window__products-card">
+
+                    <div  class="shopping-cart-window__products-info">
+                        <div class="shopping-cart-window__products-image-box">
+                            <img 
+                            class="shopping-cart-window__products-image" 
+                            src="img/shopping-cart-window/card-images/card-image-1.jpg"
+                            >
+                        </div>
+
+                        <div class="shopping-cart-window__products-description">
+                            <p class="shopping-cart-window__products-title-font">Product title</p>
+                            <div class="shopping-cart-window__products-location">
+                                <p class="shopping-cart-window_description-font">Farm:</p>
+                                <p class="shopping-cart-window_content-font">Thamaris farm</p>                                
+                            </div>
+                            <div class="shopping-cart-window__products-freshness">
+                                <p class="shopping-cart-window_description-font">Freshness:</p>
+                                <p class="shopping-cart-window_content-font">1 day old</p> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="shopping-cart-window__products-menu">
+                        <div class="shopping-cart-window__products-menu-controls">
+                            <button class="shopping-cart-window__products-wishlist shopping-cart-window_description-font">Wishlist</button>
+                            <button class="shopping-cart-window__products-compare shopping-cart-window_description-font">Compare</button>
+                            <button class="shopping-cart-window__products-remove shopping-cart-window_description-font">Remove</button>
+                        </div>
+                        <div class="shopping-cart-window__products-menu-assessment">
+                            <div class="shopping-cart-window__products-rating">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-empty.png">
+                            </div>
+                            <p class="shopping-cart-window__products-final-price">36.99 USD</p>
+                            <p class="shopping-cart-window__products-sale-price">48.56 USD</p>
+                            
+                        </div>
+                        <div class="shopping-cart-window__products-menu-quantity"></div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </section>
+    </section>
+    <!---*********shopping-cart-CART END*********--->
     <script src="js\categoriesOpen.js"></script>
     <script src="js/categorySearchSelection.js"></script>
 
