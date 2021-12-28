@@ -873,38 +873,42 @@
         </header>
 
         <section class="shopping-cart-window__products">
-            <ul class="shopping-cart-window__products-list">
-                <li class="shopping-cart-window__products-card">
+            <form action="#" method="post">
+                <ul class="shopping-cart-window__products-list">
+                    <!--- card start-->
+                    <li class="shopping-cart-window__products-card">
 
-                    <div  class="shopping-cart-window__products-info">
-                        <div class="shopping-cart-window__products-image-box">
-                            <img 
-                            class="shopping-cart-window__products-image" 
-                            src="img/shopping-cart-window/card-images/card-image-1.jpg"
-                            >
-                        </div>
-
-                        <div class="shopping-cart-window__products-description">
-                            <p class="shopping-cart-window__products-title-font">Product title</p>
-                            <div class="shopping-cart-window__products-location">
-                                <p class="shopping-cart-window_description-font">Farm:</p>
-                                <p class="shopping-cart-window_content-font">Thamaris farm</p>                                
+                        <div class="shopping-cart-window__products-info">
+                            <div class="shopping-cart-window__products-image-box">
+                                <img class="shopping-cart-window__products-image"
+                                    src="img/shopping-cart-window/card-images/card-image-1.jpg">
                             </div>
-                            <div class="shopping-cart-window__products-freshness">
-                                <p class="shopping-cart-window_description-font">Freshness:</p>
-                                <p class="shopping-cart-window_content-font">1 day old</p> 
+                            <div class="shopping-cart-window__products-menu-controls">
+                                <button
+                                    class="shopping-cart-window__products-wishlist shopping-cart-window_description-font">Wishlist</button>
+                                <button
+                                    class="shopping-cart-window__products-compare shopping-cart-window_description-font">Compare</button>
+                                <button
+                                    class="shopping-cart-window__products-remove shopping-cart-window_description-font">Remove</button>
                             </div>
 
                         </div>
-                    </div>
 
-                    <div class="shopping-cart-window__products-menu">
-                        <div class="shopping-cart-window__products-menu-controls">
-                            <button class="shopping-cart-window__products-wishlist shopping-cart-window_description-font">Wishlist</button>
-                            <button class="shopping-cart-window__products-compare shopping-cart-window_description-font">Compare</button>
-                            <button class="shopping-cart-window__products-remove shopping-cart-window_description-font">Remove</button>
-                        </div>
-                        <div class="shopping-cart-window__products-menu-assessment">
+                        <div class="shopping-cart-window__products-menu">
+
+                            <div class="shopping-cart-window__products-description">
+                                <p class="shopping-cart-window__products-title-font">Product title</p>
+                                <div class="shopping-cart-window__products-location">
+                                    <p class="shopping-cart-window_description-font">Farm:</p>
+                                    <p class="shopping-cart-window_content-font">Thamaris farm</p>
+                                </div>
+                                <div class="shopping-cart-window__products-freshness">
+                                    <p class="shopping-cart-window_description-font">Freshness:</p>
+                                    <p class="shopping-cart-window_content-font">1 day old</p>
+                                </div>
+
+                            </div>
+
                             <div class="shopping-cart-window__products-rating">
                                 <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
                                 <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
@@ -912,16 +916,56 @@
                                 <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
                                 <img src="img/shopping-cart-window/ic-actions-star-empty.png">
                             </div>
-                            <p class="shopping-cart-window__products-final-price">36.99 USD</p>
-                            <p class="shopping-cart-window__products-sale-price">48.56 USD</p>
-                            
+
+                            <div class="shopping-cart-window__products-pricing">
+
+                                <div class="shopping-cart-window__products-prices">
+                                    <p class="shopping-cart-window__products-final-price">36.99 USD</p>
+                                    <p class="shopping-cart-window__products-sale-price">48.56 USD</p>
+                                </div>
+
+                                <div class="shopping-cart-window__products-quantity shopping-cart-window_content-font">
+                                    <div class="shopping-cart-window__products-quantity-box">
+                                        <label class="shopping-cart-window__products-quantity-label">
+                                            <input 
+                                            type="text" 
+                                            name="product-quantity" 
+                                            value="1"
+                                            size="4"
+                                            pattern="[1-1000]{1, 1000}" required id="quantity0">
+                                        </label>
+                                    </div>
+                                    <p
+                                        class="shopping-cart-window__products-quantity-pcs shopping-cart-window_pcs-font">
+                                        Pcs</p>
+
+                                </div>
+                            </div>
+                            <div class="shopping-cart-window__products-menu-quantity"></div>
                         </div>
-                        <div class="shopping-cart-window__products-menu-quantity"></div>
-                    </div>
 
-                </li>
+                    </li>
+                    <!--- card end-->
+                   
 
-            </ul>
+                </ul>
+                <div class="shopping-cart-window__products-summary">
+                    <p class="shopping-cart-window_subtotal-font">Subtotal</p>
+                    <output class="shopping-cart-window_sum-font">73.98 USD</output>
+                </div>
+                <label>
+                    <input 
+                    type="submit"
+                    name="go-checkout"
+                    value="Go to Checkout"
+                    id="go-checkout"
+
+                    class="shopping-cart-window__checkout-button"
+                    >
+                </label>
+                
+            </form>
+
         </section>
     </section>
     <!---*********shopping-cart-CART END*********--->
