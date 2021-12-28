@@ -51,11 +51,9 @@
                     <img src="img/LogoFreshnesecom.png" height="18" width="177" alt="" /></div>
                 <div class="header__search-field search-field">
                     <div class="search-field__category-set">
-                        <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
                         <p class="search-field__category-set_chosen">
                             <span>All categories</span>
                         </p>
-                        <!--- Здесь нужно подмазать js-ом, чтобы выделенная категория попадала в span видимого окна поиска--->
                         <form class="category-set" name="category-set" action="#" method="post">
                             <label class="category-set__item">
                                 <input type="radio" name="category-set__item" checked>
@@ -107,7 +105,7 @@
                     </div>
                     <div class="user-field__shopping-cart shopping-cart">
                         <div class="shopping-cart__icon">
-                            <a href="#"><img src="img/icons/shopping-cart.png" alt="shopping cart"></a>
+                            <button id="shopping-cart-open-button"><img src="img/icons/shopping-cart.png" alt="shopping cart"></button>
                         </div>
                         <div class="shopping-cart__counter">4</div>
                     </div>
@@ -876,6 +874,79 @@
             <form action="#" method="post">
                 <ul class="shopping-cart-window__products-list">
                     <!--- card start-->
+                    <template>
+                    <li class="shopping-cart-window__products-card">
+
+                        <div class="shopping-cart-window__products-info">
+                            <div class="shopping-cart-window__products-image-box">
+                                <img class="shopping-cart-window__products-image"
+                                    src="img/shopping-cart-window/card-images/card-image-1.jpg">
+                            </div>
+                            <div class="shopping-cart-window__products-menu-controls">
+                                <button
+                                    class="shopping-cart-window__products-wishlist shopping-cart-window_description-font">Wishlist</button>
+                                <button
+                                    class="shopping-cart-window__products-compare shopping-cart-window_description-font">Compare</button>
+                                <button
+                                    class="shopping-cart-window__products-remove shopping-cart-window_description-font">Remove</button>
+                            </div>
+
+                        </div>
+
+                        <div class="shopping-cart-window__products-menu">
+
+                            <div class="shopping-cart-window__products-description">
+                                <p class="shopping-cart-window__products-title-font">Product title</p>
+                                <div class="shopping-cart-window__products-location">
+                                    <p class="shopping-cart-window_description-font">Farm:</p>
+                                    <p class="shopping-cart-window_content-font">Thamaris farm</p>
+                                </div>
+                                <div class="shopping-cart-window__products-freshness">
+                                    <p class="shopping-cart-window_description-font">Freshness:</p>
+                                    <p class="shopping-cart-window_content-font">1 day old</p>
+                                </div>
+
+                            </div>
+
+                            <div class="shopping-cart-window__products-rating">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-fulfilled.png">
+                                <img src="img/shopping-cart-window/ic-actions-star-empty.png">
+                            </div>
+
+                            <div class="shopping-cart-window__products-pricing">
+
+                                <div class="shopping-cart-window__products-prices">
+                                    <p class="shopping-cart-window__products-final-price">36.99 USD</p>
+                                    <p class="shopping-cart-window__products-sale-price">48.56 USD</p>
+                                </div>
+
+                                <div class="shopping-cart-window__products-quantity shopping-cart-window_content-font">
+                                    <div class="shopping-cart-window__products-quantity-box">
+                                        <label class="shopping-cart-window__products-quantity-label">
+                                            <input 
+                                            type="text" 
+                                            name="product-quantity" 
+                                            value="1"
+                                            size="4"
+                                            pattern="[1-1000]{1, 1000}" required id="quantity0">
+                                        </label>
+                                    </div>
+                                    <p
+                                        class="shopping-cart-window__products-quantity-pcs shopping-cart-window_pcs-font">
+                                        Pcs</p>
+
+                                </div>
+                            </div>
+                            <div class="shopping-cart-window__products-menu-quantity"></div>
+                        </div>
+
+                    </li>
+                    </template>
+                    <!--- card end-->
+                    <!--- card start-->
                     <li class="shopping-cart-window__products-card">
 
                         <div class="shopping-cart-window__products-info">
@@ -971,6 +1042,8 @@
     <!---*********shopping-cart-CART END*********--->
     <script src="js\categoriesOpen.js"></script>
     <script src="js/categorySearchSelection.js"></script>
+    <script src="js/shoppingCart.js"></script>
+
 
     <!---<script src="js\PISsK.js"></script>--->
 </body>

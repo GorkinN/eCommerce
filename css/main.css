@@ -545,6 +545,11 @@ a:focus {
   line-height: 18px;
   color: #FFFFFF;
 }
+.shopping-cart__icon button {
+  background: none;
+  border: none;
+  padding: 0;
+}
 /*адаптив для header__categories*/
 @media (max-width: 1200px) {
   .header__categories {
