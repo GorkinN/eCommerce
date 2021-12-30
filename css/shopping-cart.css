@@ -244,3 +244,17 @@
     margin-right: 8px;
   }
 }
+.addedToCartMessage {
+  position: absolute;
+  z-index: 999;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px 0 #005000;
+  border-radius: 8px;
+  padding: 6px;
+}
